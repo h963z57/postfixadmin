@@ -40,12 +40,10 @@ RUN cp /usr/share/zoneinfo/Asia/Yekaterinburg /etc/localtime \
 								&& mkdir /var/www/html/templates_c \
 									&& mv /conf/entrypoint.sh /entrypoint.sh \
 									&& mv /conf/nginx.conf /etc/nginx/nginx.conf \
-									&& mv /conf/config.inc.php /var/www/html/config.inc.php \
 									&& rm -R /conf \
 										&& chown -R www-data:www-data /var/www/html \
 										&& chmod -R 500 /var/www/html \
 										&& chmod -R 700 /var/www/html/templates_c/ \
-										&& chmod 400 /var/www/html/config.inc.php \
 											&& chmod a+x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
