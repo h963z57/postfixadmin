@@ -1,5 +1,5 @@
 #--------------------------------------------------------
-# Dockerfile to build Imgage of phpMyAdmin service
+# Dockerfile to build Imgage of postfixAdmin service
 #
 # Made by h963z57 16-Aug-2022
 #--------------------------------------------------------
