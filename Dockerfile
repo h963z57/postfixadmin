@@ -33,7 +33,7 @@ RUN cp /usr/share/zoneinfo/Asia/Yekaterinburg /etc/localtime \
 						php8.0-xml \
 						php-pear \
 						php8.0-bcmath \				
- 							&& echo "timezone = Asia/Yekaterinburg" >> /etc/php/8.0/php.ini \ 
+ 							&& echo "timezone = Europe/Moscow" >> /etc/php/8.0/php.ini \ 
 								&& wget https://sourceforge.net/projects/postfixadmin/files/postfixadmin-3.3.8/PostfixAdmin%203.3.8.tar.gz -O PostfixAdmin-tar.gz \
 								&& tar xvf PostfixAdmin-tar.gz --strip-components=1 -C /var/www/html/ \
 								&& rm PostfixAdmin-tar.gz \
